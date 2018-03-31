@@ -26,6 +26,7 @@ namespace Numerology999
             StreamReader reader = new StreamReader(xmlFile);
             localTable = (Table)serializer.Deserialize(reader);
             reader.Close();
+
         }
     }
 }
