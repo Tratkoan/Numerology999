@@ -5,28 +5,29 @@
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px">
-  <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/editText1"
-            android:inputType="number"
-            android:maxLength="1"
-            android:numeric="integer"
-            android:gravity="center" />
-  <Button
-      android:text="Show"
-      android:layout_width="match_parent"
-      android:layout_height="41.0dp"
-      android:id="@+id/showButton"
-      android:clickable="true" />
-  <TextView
-      android:textAppearance="?android:attr/textAppearanceMedium"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:id="@+id/textViewHeader" />
-  <TextView
-      android:textAppearance="?android:attr/textAppearanceSmall"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:id="@+id/textViewText" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextUserInput"
+        android:inputType="number"
+        android:maxLength="4"
+        android:numeric="integer"
+        android:gravity="center"
+        android:text="0" />
+    <Button
+        android:text="Show"
+        android:layout_width="match_parent"
+        android:layout_height="41.0dp"
+        android:id="@+id/showButton"
+        android:clickable="true" />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewHeader" />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewText" />
 </LinearLayout>

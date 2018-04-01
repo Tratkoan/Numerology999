@@ -61,7 +61,7 @@ namespace Numerology999
 		{
 			
 			// aapt resource value: 0x7f050000
-			public const int editText1 = 2131034112;
+			public const int editTextUserInput = 2131034112;
 			
 			// aapt resource value: 0x7f050001
 			public const int showButton = 2131034113;

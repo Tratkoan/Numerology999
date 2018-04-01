@@ -80,7 +80,9 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\Table.xml" />
+    <AndroidAsset Include="Assets\table.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidAsset>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\Data\" />

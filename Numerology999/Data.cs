@@ -40,6 +40,11 @@ namespace Numerology999
         public string Height { get; set; }
         [XmlAttribute(AttributeName = "AutoFitHeight")]
         public string AutoFitHeight { get; set; }
+
+        public string GetValue(int i)
+        {
+            return Cell[i].Data.Text;
+        }
     }
 
     [XmlRoot(ElementName = "Table")]
@@ -48,4 +53,5 @@ namespace Numerology999
         [XmlElement(ElementName = "Row")]
         public List<Row> Row { get; set; }
     }
+
 }
