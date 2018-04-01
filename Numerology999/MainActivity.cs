@@ -24,27 +24,20 @@ namespace Numerology999
             // set onclick listener here, by deleting some process
             showButton.Click += delegate 
             {
-                showButtonClick();
+                showText();
             };
 
-            //EditText input = FindViewById<EditText>(Resource.Id.editTextUserInput);
-            //input.KeyPress += delegate
-            //{
-            //    showButtonClick();
-            //};
+            TextView textView = FindViewById<TextView>(Resource.Id.textViewText);
+            textView.MovementMethod = new Android.Text.Method.ScrollingMovementMethod();
 
             EditText input = FindViewById<EditText>(Resource.Id.editTextUserInput);
             input.KeyPress += (object sender, View.KeyEventArgs e) => {
                 e.Handled = false;
-                if (e.Event.Action == KeyEventActions.Down && e.KeyCode == Keycode.Enter)
-                {
-                    Toast.MakeText(this, input.Text, ToastLength.Short).Show();
-                    e.Handled = true;
-                }
+                showText();
             };
         }
 
-        public void showButtonClick()
+        public void showText()
         {
             //Toast.MakeText(this, "Procedimento de logon ", ToastLength.Long).Show();
             using (System.IO.Stream xmlFile = Assets.Open("table.xml"))

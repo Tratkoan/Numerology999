@@ -18,16 +18,12 @@
         android:text="Show"
         android:layout_width="match_parent"
         android:layout_height="41.0dp"
-        android:id="@+id/showButton"
-        android:clickable="true" />
-    <TextView
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textViewHeader" />
+        android:clickable="true"
+        android:id="@+id/showButton" />
     <TextView
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:scrollbars="vertical"
         android:id="@+id/textViewText" />
 </LinearLayout>

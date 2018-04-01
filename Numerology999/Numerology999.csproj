@@ -55,6 +55,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data.cs" />
+    <None Include="Data_o.cs" />
+    <None Include="DataWalker_o.cs" />
     <Compile Include="DataWalker.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />

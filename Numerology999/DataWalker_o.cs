@@ -17,33 +17,34 @@ namespace Numerology999
 {
     class DataWalker
     {
-        public Numerology999.Root localTable = null;
+        public Numerology999.Table localTable = null;
+        private enum ColumnIndex : int
+        {
+            Number,
+            Text
+        }
 
         public DataWalker(Stream xmlFile)
         {
-            XmlSerializer serializer = new XmlSerializer(typeof(Root));
+            XmlSerializer serializer = new XmlSerializer(typeof(Table));
 
             StreamReader reader = new StreamReader(xmlFile);
-            localTable = (Root)serializer.Deserialize(reader);
+            localTable = (Table)serializer.Deserialize(reader);
             reader.Close();
 
         }
 
         public bool NumberExists(string i)
         {
-            return localTable.Row.Any(v => v.Number.Equals(i));
-        }
-
-        public bool NumbersExists_(string i)
-        {
-            return localTable.Row.Any(v => v.Number.Replace(" ","").Split(',').Contains(i));
+            return localTable.Row.Any(v => v.Cell[0].Data.Text.Equals(i));
         }
 
         public string GetText(string i)
         {
             string result = (from v in localTable.Row
-                             where v.Number.Replace(" ", "").Split(',').Contains(i)
-                             select v.Text).SingleOrDefault();
+                            where v.GetValue((int) ColumnIndex.Number).Equals(i)
+                            select v.GetValue((int) ColumnIndex.Text)).SingleOrDefault();
+
             return result;
         }
     }

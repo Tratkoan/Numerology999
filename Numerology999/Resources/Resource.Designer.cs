@@ -67,10 +67,7 @@ namespace Numerology999
 			public const int showButton = 2131034113;
 			
 			// aapt resource value: 0x7f050002
-			public const int textViewHeader = 2131034114;
-			
-			// aapt resource value: 0x7f050003
-			public const int textViewText = 2131034115;
+			public const int textViewText = 2131034114;
 			
 			static Id()
 			{

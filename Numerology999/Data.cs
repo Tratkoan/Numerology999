@@ -13,44 +13,19 @@ using Android.Widget;
 
 namespace Numerology999
 {
-    [XmlRoot(ElementName = "Data")]
-    public class Data
+    [XmlRoot(ElementName = "row")]
+    public class Row
     {
-        [XmlAttribute(AttributeName = "Type")]
-        public string Type { get; set; }
-        [XmlText]
+        [XmlElement(ElementName = "number")]
+        public string Number { get; set; }
+        [XmlElement(ElementName = "Text")]
         public string Text { get; set; }
     }
 
-    [XmlRoot(ElementName = "Cell")]
-    public class Cell
+    [XmlRoot(ElementName = "root")]
+    public class Root
     {
-        [XmlElement(ElementName = "Data")]
-        public Data Data { get; set; }
-        [XmlAttribute(AttributeName = "StyleID")]
-        public string StyleID { get; set; }
-    }
-
-    [XmlRoot(ElementName = "Row")]
-    public class Row
-    {
-        [XmlElement(ElementName = "Cell")]
-        public List<Cell> Cell { get; set; }
-        [XmlAttribute(AttributeName = "Height")]
-        public string Height { get; set; }
-        [XmlAttribute(AttributeName = "AutoFitHeight")]
-        public string AutoFitHeight { get; set; }
-
-        public string GetValue(int i)
-        {
-            return Cell[i].Data.Text;
-        }
-    }
-
-    [XmlRoot(ElementName = "Table")]
-    public class Table
-    {
-        [XmlElement(ElementName = "Row")]
+        [XmlElement(ElementName = "row")]
         public List<Row> Row { get; set; }
     }
 
