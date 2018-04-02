@@ -18,17 +18,17 @@ namespace Numerology999
             // Set our view from the "main" layout resource
             SetContentView (Resource.Layout.Main);
 
-            // Preparing the button
-            Button showButton = FindViewById<Button>(Resource.Id.showButton);
+            //// Preparing the button
+            //Button showButton = FindViewById<Button>(Resource.Id.showButton);
 
-            // set onclick listener here, by deleting some process
-            showButton.Click += delegate 
-            {
-                showText();
-            };
+            //// set onclick listener here, by deleting some process
+            //showButton.Click += delegate 
+            //{
+            //    showText();
+            //};
 
-            TextView textView = FindViewById<TextView>(Resource.Id.textViewText);
-            textView.MovementMethod = new Android.Text.Method.ScrollingMovementMethod();
+            //TextView textView = FindViewById<TextView>(Resource.Id.textViewText);
+            //textView.MovementMethod = new Android.Text.Method.ScrollingMovementMethod();
 
             EditText input = FindViewById<EditText>(Resource.Id.editTextUserInput);
             input.KeyPress += (object sender, View.KeyEventArgs e) => {

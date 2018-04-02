@@ -12,18 +12,16 @@
         android:inputType="number"
         android:maxLength="4"
         android:numeric="integer"
-        android:gravity="center"
-        android:text="0" />
-    <Button
-        android:text="Show"
-        android:layout_width="match_parent"
-        android:layout_height="41.0dp"
-        android:clickable="true"
-        android:id="@+id/showButton" />
-    <TextView
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scrollbars="vertical"
-        android:id="@+id/textViewText" />
+        android:gravity="center" />
+    <ScrollView
+        android:id="@+id/SonucScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewText" />
+    </ScrollView>
 </LinearLayout>
