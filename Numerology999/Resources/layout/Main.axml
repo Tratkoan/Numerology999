@@ -7,21 +7,33 @@
     android:minHeight="25px">
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="77sp"
         android:id="@+id/editTextUserInput"
         android:inputType="number"
         android:maxLength="4"
         android:numeric="integer"
-        android:gravity="center" />
+        android:gravity="center"
+        android:background="@android:color/holo_green_light"
+        android:textSize="66sp"
+        android:text="3333"
+        android:allowUndo="true"
+        android:textColor="@android:color/white" />
     <ScrollView
         android:id="@+id/SonucScrollView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:background="@android:color/white">
         <TextView
-            android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textViewText" />
+            android:id="@+id/textViewText"
+            android:textSize="20sp"
+            android:text="I have been recently experimenting with integrating ads into my applications as an experiment. Not really to make money, but to just get it setup and working. I recently experimented with both Facebook Ads and Google AdMob for my iOS app “Social Post” and the results have been pretty good. I discussed this strategy a few weeks back on the Merge Conflict podcast with Frank on Monitization. I have been recently experimenting with integrating ads into my applications as an experiment. Not really to make money, but to just get it setup and working. I recently experimented with both Facebook Ads and Google AdMob for my iOS app “Social Post” and the results have been pretty good. I discussed this strategy a few weeks back on the Merge Conflict podcast with Frank on Monitization. "
+            android:textColor="@android:color/black"
+            android:paddingLeft="12sp"
+            android:paddingBottom="12sp"
+            android:paddingRight="12sp"
+            android:paddingTop="12sp" />
     </ScrollView>
 </LinearLayout>

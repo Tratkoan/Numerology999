@@ -2,4 +2,7 @@
 <resources>
   <string name="Hello">Hello World, Click Me!</string>
   <string name="ApplicationName">Numerology999</string>
+  <string name="TextMargin">12</string>
+  <string name="TextSize">20</string>
+  <string name="InputSize">66</string>
 </resources>

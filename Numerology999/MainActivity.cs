@@ -8,29 +8,30 @@ using Android.Views;
 
 namespace Numerology999
 {
-    [Activity(Label = "Numerology999", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(
+        Label = "Numerology999", 
+        MainLauncher = true, 
+        Icon = "@drawable/icon", 
+        Theme = "@android:style/Theme.DeviceDefault.Light.NoActionBar"
+        )]
     public class MainActivity : Activity
     {
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            
-            // Set our view from the "main" layout resource
+
+            // Set view from the "main" layout resource
             SetContentView (Resource.Layout.Main);
-
-            //// Preparing the button
-            //Button showButton = FindViewById<Button>(Resource.Id.showButton);
-
-            //// set onclick listener here, by deleting some process
-            //showButton.Click += delegate 
-            //{
-            //    showText();
-            //};
-
-            //TextView textView = FindViewById<TextView>(Resource.Id.textViewText);
-            //textView.MovementMethod = new Android.Text.Method.ScrollingMovementMethod();
-
+            
+            // get viewes
             EditText input = FindViewById<EditText>(Resource.Id.editTextUserInput);
+            TextView text = FindViewById<TextView>(Resource.Id.textViewText);
+
+            // remove sample text
+            input.Text = "";
+            text.Text = "";
+
+            // set event action
             input.KeyPress += (object sender, View.KeyEventArgs e) => {
                 e.Handled = false;
                 showText();
