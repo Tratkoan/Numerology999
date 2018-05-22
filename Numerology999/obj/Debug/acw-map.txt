@@ -1,0 +1,4 @@
+Numerology999.MainActivity, Numerology999;md56eb7870bb09ac1500cf6a9548d185b5b.MainActivity
+Numerology999.MainActivity, Numerology999, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md56eb7870bb09ac1500cf6a9548d185b5b.MainActivity
+Numerology999.MainActivity;md56eb7870bb09ac1500cf6a9548d185b5b.MainActivity
+numerology999.MainActivity;md56eb7870bb09ac1500cf6a9548d185b5b.MainActivity
