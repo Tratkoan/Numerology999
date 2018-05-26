@@ -1,0 +1,122 @@
+{
+  "version": 3,
+  "targets": {
+    "MonoAndroid,Version=v8.1": {
+      "Xamarin.Android.Support.v4/23.1.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid403/Xamarin.Android.Support.v4.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid403/Xamarin.Android.Support.v4.dll": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Ads/29.0.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.GooglePlayServices.Basement": "[29.0.0.2]"
+        },
+        "compile": {
+          "lib/MonoAndroid41/Xamarin.GooglePlayServices.Ads.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid41/Xamarin.GooglePlayServices.Ads.dll": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Basement/29.0.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.v4": "23.1.1.1"
+        },
+        "compile": {
+          "lib/MonoAndroid41/Xamarin.GooglePlayServices.Basement.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid41/Xamarin.GooglePlayServices.Basement.dll": {}
+        },
+        "build": {
+          "build/Xamarin.GooglePlayServices.Basement.targets": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Xamarin.Android.Support.v4/23.1.1.1": {
+      "sha512": "QuWSf1MBHMOu3gBUHG/kaSByHfaeswuqPr8xCqmX5IX6alnT8W8lBWb2vjAlQAe4iEtEst6pwx1kq3qr2V6HYQ==",
+      "type": "package",
+      "path": "xamarin.android.support.v4/23.1.1.1",
+      "files": [
+        "lib/MonoAndroid403/Xamarin.Android.Support.v4.dll",
+        "xamarin.android.support.v4.23.1.1.1.nupkg.sha512",
+        "xamarin.android.support.v4.nuspec"
+      ]
+    },
+    "Xamarin.GooglePlayServices.Ads/29.0.0.2": {
+      "sha512": "ThrtIZwNDQ4rhAuPcAlYZttnBhdNyqDumD/gYkfNQpZZkLAtZMgFui25gPzTUN7PdPxHKZFO3zpnHoxnkgeaPg==",
+      "type": "package",
+      "path": "xamarin.googleplayservices.ads/29.0.0.2",
+      "files": [
+        "lib/MonoAndroid41/Xamarin.GooglePlayServices.Ads.dll",
+        "xamarin.googleplayservices.ads.29.0.0.2.nupkg.sha512",
+        "xamarin.googleplayservices.ads.nuspec"
+      ]
+    },
+    "Xamarin.GooglePlayServices.Basement/29.0.0.2": {
+      "sha512": "f9aVr3xew7lhM33vmDMjy6RrHU6l3NWAJXvAErli+jLTLGrawgE1RRhEUFj0D7uI3oUibZTvF/gQXDKr/f+Lpw==",
+      "type": "package",
+      "path": "xamarin.googleplayservices.basement/29.0.0.2",
+      "files": [
+        "build/Xamarin.GooglePlayServices.Basement.targets",
+        "lib/MonoAndroid41/Xamarin.GooglePlayServices.Basement.dll",
+        "xamarin.googleplayservices.basement.29.0.0.2.nupkg.sha512",
+        "xamarin.googleplayservices.basement.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "MonoAndroid,Version=v8.1": [
+      "Xamarin.GooglePlayServices.Ads >= 29.0.0.2"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Anton\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Anton\\Source\\Repos\\Numerology999\\Numerology999\\Numerology999.csproj",
+      "projectName": "Numerology999",
+      "projectPath": "C:\\Users\\Anton\\Source\\Repos\\Numerology999\\Numerology999\\Numerology999.csproj",
+      "packagesPath": "C:\\Users\\Anton\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Anton\\Source\\Repos\\Numerology999\\Numerology999\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\Anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "monoandroid81"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "monoandroid81": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "monoandroid81": {
+        "dependencies": {
+          "Xamarin.GooglePlayServices.Ads": {
+            "target": "Package",
+            "version": "[29.0.0.2, )"
+          }
+        }
+      }
+    }
+  }
+}
