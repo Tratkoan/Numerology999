@@ -6,6 +6,8 @@ using Android.Content;
 using Android.Runtime;
 using Android.Views;
 
+using Android.Gms.Ads;
+
 namespace Numerology999
 {
     [Activity(
@@ -19,10 +21,9 @@ namespace Numerology999
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-
             // Set view from the "main" layout resource
             SetContentView (Resource.Layout.Main);
-            
+
             // get viewes
             EditText input = FindViewById<EditText>(Resource.Id.editTextUserInput);
             TextView text = FindViewById<TextView>(Resource.Id.textViewText);
@@ -36,6 +37,21 @@ namespace Numerology999
                 e.Handled = false;
                 showText();
             };
+
+            // Get AdView
+            AdView ad = new AdView(this)
+            {
+                AdUnitId = "",
+                AdSize = AdSize.Banner
+            };
+
+            // Add ad to main layout
+            var mainLayout = FindViewById<LinearLayout>(Resource.Id.mainLayout);
+            var layoutParameter = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.WrapContent);
+
+            mainLayout.AddView(ad, layoutParameter);
+
+            ad.LoadAd(GetAdRequest(true));
         }
 
         public void showText()
@@ -49,6 +65,17 @@ namespace Numerology999
                 text.Text = walker.GetText(input.Text);
             }
                 
+        }
+
+        public static AdRequest GetAdRequest(bool addTestDevice)
+        {
+            //string testDeviceId = Resource.String.TestDeviceID.ToString();
+            var builder = new AdRequest.Builder();
+
+            if (addTestDevice)
+                builder.AddTestDevice(Resource.String.TestDeviceID.ToString());
+
+            return builder.Build();
         }
     }
     

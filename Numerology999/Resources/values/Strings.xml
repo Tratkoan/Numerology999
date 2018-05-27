@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="Hello">Hello World, Click Me!</string>
   <string name="ApplicationName">Numerology999</string>
-  <string name="TextMargin">12</string>
-  <string name="TextSize">20</string>
-  <string name="InputSize">66</string>
+  <string name="TestDeviceID">I9195XXUCOA2</string>
+  <string name="AppID">ca-app-pub-9263758141504977~9364813421</string>
+  <string name="BannerID">ca-app-pub-9263758141504977/1294751717</string>
 </resources>

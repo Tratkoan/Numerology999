@@ -2,9 +2,9 @@
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
-    <SelectedDevice>1</SelectedDevice>
+    <SelectedDevice>Samsung GT-I9195</SelectedDevice>
     <DefaultDevice>1</DefaultDevice>
-    <AndroidDesignerPreferredTheme>Theme.DeviceDefault.Light</AndroidDesignerPreferredTheme>
+    <AndroidDesignerPreferredTheme>Theme.DeviceDefault</AndroidDesignerPreferredTheme>
   </PropertyGroup>
   <PropertyGroup>
     <ReferencePath>C:\Program Files (x86)\Android\android-sdk\extras\google\google_play_services\</ReferencePath>

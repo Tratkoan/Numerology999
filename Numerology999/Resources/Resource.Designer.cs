@@ -78,8 +78,11 @@ namespace Numerology999
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f070006
+			public const int SonucScrollView = 2131165190;
+			
 			// aapt resource value: 0x7f070004
-			public const int SonucScrollView = 2131165188;
+			public const int adView = 2131165188;
 			
 			// aapt resource value: 0x7f070000
 			public const int adjust_height = 2131165184;
@@ -87,14 +90,17 @@ namespace Numerology999
 			// aapt resource value: 0x7f070001
 			public const int adjust_width = 2131165185;
 			
+			// aapt resource value: 0x7f070005
+			public const int editTextUserInput = 2131165189;
+			
 			// aapt resource value: 0x7f070003
-			public const int editTextUserInput = 2131165187;
+			public const int mainLayout = 2131165187;
 			
 			// aapt resource value: 0x7f070002
 			public const int none = 2131165186;
 			
-			// aapt resource value: 0x7f070005
-			public const int textViewText = 2131165189;
+			// aapt resource value: 0x7f070007
+			public const int textViewText = 2131165191;
 			
 			static Id()
 			{
@@ -141,20 +147,17 @@ namespace Numerology999
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f04000a
-			public const int ApplicationName = 2130968586;
+			// aapt resource value: 0x7f04000b
+			public const int AppID = 2130968587;
 			
 			// aapt resource value: 0x7f040009
-			public const int Hello = 2130968585;
-			
-			// aapt resource value: 0x7f04000d
-			public const int InputSize = 2130968589;
-			
-			// aapt resource value: 0x7f04000b
-			public const int TextMargin = 2130968587;
+			public const int ApplicationName = 2130968585;
 			
 			// aapt resource value: 0x7f04000c
-			public const int TextSize = 2130968588;
+			public const int BannerID = 2130968588;
+			
+			// aapt resource value: 0x7f04000a
+			public const int TestDeviceID = 2130968586;
 			
 			// aapt resource value: 0x7f040005
 			public const int accept = 2130968581;
