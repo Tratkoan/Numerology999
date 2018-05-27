@@ -106,6 +106,7 @@ containing a value of this type.
         public static final int AppID=0x7f04000b;
         public static final int ApplicationName=0x7f040009;
         public static final int BannerID=0x7f04000c;
+        public static final int TestBannerID=0x7f04000d;
         public static final int TestDeviceID=0x7f04000a;
         public static final int accept=0x7f040005;
         /**  Brand name for Facebook [DO NOT TRANSLATE] 
