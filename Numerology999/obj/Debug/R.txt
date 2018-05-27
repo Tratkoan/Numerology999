@@ -18,6 +18,7 @@ int layout main 0x7f030000
 int string AppID 0x7f04000b
 int string ApplicationName 0x7f040009
 int string BannerID 0x7f04000c
+int string TestBannerID 0x7f04000d
 int string TestDeviceID 0x7f04000a
 int string accept 0x7f040005
 int string auth_google_play_services_client_facebook_display_name 0x7f040001

@@ -156,6 +156,9 @@ namespace Numerology999
 			// aapt resource value: 0x7f04000c
 			public const int BannerID = 2130968588;
 			
+			// aapt resource value: 0x7f04000d
+			public const int TestBannerID = 2130968589;
+			
 			// aapt resource value: 0x7f04000a
 			public const int TestDeviceID = 2130968586;
 			

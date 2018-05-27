@@ -887,6 +887,9 @@ namespace Numerology999
 			public static int store_picture_title = 2131296297;
 			
 			// aapt resource value: 0
+			public static int TestBannerID = 0;
+			
+			// aapt resource value: 0
 			public static int TestDeviceID = 0;
 			
 			// aapt resource value: 2131296298

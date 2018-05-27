@@ -41,7 +41,7 @@ namespace Numerology999
             // Get AdView
             AdView ad = new AdView(this)
             {
-                AdUnitId = "",
+                AdUnitId = Resources.GetString(Resource.String.TestBannerID),
                 AdSize = AdSize.Banner
             };
 
@@ -67,13 +67,13 @@ namespace Numerology999
                 
         }
 
-        public static AdRequest GetAdRequest(bool addTestDevice)
+        public AdRequest GetAdRequest(bool addTestDevice)
         {
             //string testDeviceId = Resource.String.TestDeviceID.ToString();
             var builder = new AdRequest.Builder();
 
             if (addTestDevice)
-                builder.AddTestDevice(Resource.String.TestDeviceID.ToString());
+                builder.AddTestDevice(Resources.GetString(Resource.String.TestDeviceID));
 
             return builder.Build();
         }
