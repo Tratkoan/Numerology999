@@ -39,19 +39,11 @@ namespace Numerology999
             };
 
             // Get AdView
-            AdView ad = new AdView(this)
-            {
-                AdUnitId = Resources.GetString(Resource.String.TestBannerID),
-                AdSize = AdSize.Banner
-            };
-
-            // Add ad to main layout
-            var mainLayout = FindViewById<LinearLayout>(Resource.Id.mainLayout);
-            var layoutParameter = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.WrapContent);
-
-            mainLayout.AddView(ad, layoutParameter);
-
-            ad.LoadAd(GetAdRequest(true));
+            AdView ad = FindViewById<AdView>(Resource.Id.adView);
+            //ad.AdUnitId = Resources.GetString(Resource.String.TestBannerID);
+            //ad.AdSize = AdSize.Banner;
+            
+            ad.LoadAd(GetAdRequest(false));
         }
 
         public void showText()

@@ -87,12 +87,14 @@ containing a value of this type.
         public static int icon=0x7f020000;
     }
     public static final class id {
-        public static int SonucScrollView=0x7f070004;
+        public static int SonucScrollView=0x7f070006;
+        public static int adView=0x7f070004;
         public static int adjust_height=0x7f070000;
         public static int adjust_width=0x7f070001;
-        public static int editTextUserInput=0x7f070003;
+        public static int editTextUserInput=0x7f070005;
+        public static int mainLayout=0x7f070003;
         public static int none=0x7f070002;
-        public static int textViewText=0x7f070005;
+        public static int textViewText=0x7f070007;
     }
     public static final class integer {
         public static int google_play_services_version=0x7f050000;
@@ -101,11 +103,11 @@ containing a value of this type.
         public static int main=0x7f030000;
     }
     public static final class string {
-        public static int ApplicationName=0x7f04000a;
-        public static int Hello=0x7f040009;
-        public static int InputSize=0x7f04000d;
-        public static int TextMargin=0x7f04000b;
-        public static int TextSize=0x7f04000c;
+        public static int AppID=0x7f04000b;
+        public static int ApplicationName=0x7f040009;
+        public static int BannerID=0x7f04000c;
+        public static int TestBannerID=0x7f04000d;
+        public static int TestDeviceID=0x7f04000a;
         public static int accept=0x7f040005;
         /**  Brand name for Facebook [DO NOT TRANSLATE] 
          */
